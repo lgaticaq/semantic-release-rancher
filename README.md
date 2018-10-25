@@ -10,26 +10,35 @@
 
 > Set of [semantic-release](https://github.com/semantic-release/semantic-release) plugins for upgrade service in [Rancher](https://rancher.com/docs/rancher/v1.6/en/cattle/upgrading/).
 
+| Step               | Description        |
+|--------------------|--------------------|
+| `verifyConditions` | Verify the presence and the validity of the rancher api key (set via [environment variables](#environment-variables)). |
+| `publish`          | Upgrade a service with a new version. |
+
+## Install
+
+```bash
+npm i -D semantic-release-rancher
+```
+
+## Usage
+
+The plugin can be configured in the [**semantic-release** configuration file](https://github.com/semantic-release/semantic-release/blob/caribou/docs/usage/configuration.md#configuration):
+
 ```json
 {
-  "release": {
-    "verifyConditions": "semantic-release-rancher",
-    "publish": "semantic-release-rancher"
-  }
+  "plugins": [
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+    "@semantic-release/git",
+    "@semantic-release/gitlab",
+    "semantic-release-gitlab-registry",
+    "semantic-release-rancher"
+  ]
 }
 ```
 
-## Plugins
-
-### `verifyConditions`
-
-Verify that all needed configuration is present.
-
-### `publish`
-
-Upgrade new version in Rancher.
-
-## Example .gitlab-ci.yml
+Example .gitlab-ci.yml
 
 ```yml
 stages:
@@ -55,6 +64,20 @@ release:
   only:
     - master
 ```
+
+## Configuration
+
+### Environment variables
+
+| Variable              | Description                                                                   |
+| --------------------- | ----------------------------------------------------------------------------- |
+| `RANCHER_URL`         | **Required.** The url of rancher server. Example: https://rancher.example.com |
+| `RANCHER_ENVIRONMENT` | **Required.** The environment id. Example: 1a11                               |
+| `RANCHER_ACCESS_KEY`  | **Required.** The API access key.                                             |
+| `RANCHER_SECRET_KEY`  | **Required.** The API secret key.                                             |
+| `RANCHER_STACK`       | **Required.** The stack name.                                                 |
+| `RANCHER_SERVICE`     | **Required.** The service name.                                               |
+| `RANCHER_SERVICES`    | Optional JSON array with objects stack/service to upgrade multiple services. Example: `[{"stack": "myStack1", "service": "myService1"},{"stack": "myStack2", "service": "myService2"}]` |
 
 ## License
 
