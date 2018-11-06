@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.0.0...v2.0.1) (2018-11-06)
+
+
+### Bug Fixes
+
+* **publish:** fix compose rancher url ([172e918](https://github.com/lgaticaq/semantic-release-rancher/commit/172e918))
+
 # [2.0.0](https://github.com/lgaticaq/semantic-release-rancher/compare/v1.0.2...v2.0.0) (2018-10-25)
 
 
