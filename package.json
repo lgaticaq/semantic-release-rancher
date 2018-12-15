@@ -56,7 +56,7 @@
     "npm-github-config": "2.0.0",
     "prettier-standard": "8.0.1",
     "semantic-release": "15.13.0",
-    "travis-deploy-once": "5.0.10"
+    "travis-deploy-once": "5.0.11"
   },
   "peerDependencies": {
     "semantic-release": ">=11.0.0 <16.0.0"
