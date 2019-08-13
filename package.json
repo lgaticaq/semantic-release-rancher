@@ -55,7 +55,7 @@
     "lint-staged": "9.2.1",
     "npm-github-config": "2.0.0",
     "prettier-standard": "9.1.1",
-    "semantic-release": "15.13.19"
+    "semantic-release": "15.13.21"
   },
   "peerDependencies": {
     "semantic-release": ">=11.0.0 <16.0.0"
