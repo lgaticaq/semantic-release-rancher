@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.0.1...v2.0.2) (2019-10-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies ([f4e967d](https://github.com/lgaticaq/semantic-release-rancher/commit/f4e967df3a61536ff1a51c2abdee0546650dabd3))
+
 ## [2.0.1](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.0.0...v2.0.1) (2018-11-06)
 
 
