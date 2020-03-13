@@ -79,6 +79,46 @@ release:
 | `RANCHER_SERVICE`     | **Required.** The service name.                                               |
 | `RANCHER_SERVICES`    | Optional JSON array with objects stack/service to upgrade multiple services. Example: `[{"stack": "myStack1", "service": "myService1"},{"stack": "myStack2", "service": "myService2"}]` |
 
+### Options
+
+| Variable             | Description |
+| -------------------- | -------------------------------- |
+| `rancherUrl`         | The url of rancher server. Example: `https://rancher.example.com` |
+| `rancherEnvironment` | The environment id. Example: `1a11` |
+| `services`  | Array of object services. Example: `[{"stack": "MyStack", "service": "MyService"}, {"stack": "MyStack", "service": "MyOtherService", "startFirst": false}]` |
+
+### Examples
+
+```json
+{
+  "plugins": [
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+    "@semantic-release/git",
+    "@semantic-release/gitlab",
+    "semantic-release-gitlab-registry",
+    [
+      "semantic-release-rancher",
+      {
+        "rancherUrl": "https://rancher.example.com",
+        "rancherEnvironment": "1a11",
+        "services": [
+          {
+            "stack": "MyStack",
+            "service": "MyService"
+          },
+          {
+            "stack": "MyStack",
+            "service": "MyOtherService",
+            "startFirst": false
+          }
+        ]
+      }
+    ]
+  ]
+}
+```
+
 ## License
 
 [MIT](https://tldrlegal.com/license/mit-license)
