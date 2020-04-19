@@ -1,3 +1,15 @@
+# [2.1.0](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.0.2...v2.1.0) (2020-04-19)
+
+
+### Bug Fixes
+
+* **deps:** fix vulnerabilities ([90db535](https://github.com/lgaticaq/semantic-release-rancher/commit/90db535e17d97ab6582a7828f090e346610244da))
+
+
+### Features
+
+* **config:** enable set environment, url and services from config ([17503a5](https://github.com/lgaticaq/semantic-release-rancher/commit/17503a5b6a736643ee7207677ab74deb3d4588a9)), closes [#203](https://github.com/lgaticaq/semantic-release-rancher/issues/203)
+
 ## [2.0.2](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.0.1...v2.0.2) (2019-10-17)
 
 
