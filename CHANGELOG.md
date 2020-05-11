@@ -1,3 +1,11 @@
+## [2.1.1](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.1.0...v2.1.1) (2020-05-11)
+
+
+### Bug Fixes
+
+* **logger:** change logger to logger.log ([5305990](https://github.com/lgaticaq/semantic-release-rancher/commit/53059909f921f195b3ac5ae5aa0b679333a9230d))
+* **publish:** add startFirst ([ff0a151](https://github.com/lgaticaq/semantic-release-rancher/commit/ff0a151ad822205ad2a704dd3cbcddb6c756afe7))
+
 # [2.1.0](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.0.2...v2.1.0) (2020-04-19)
 
 
