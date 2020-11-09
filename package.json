@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/lgaticaq/semantic-release-rancher#readme",
   "dependencies": {
-    "@eclass/rancher-for-ci": "^2.1.3",
+    "@eclass/rancher-for-ci": "^2.1.5",
     "@semantic-release/error": "^2.1.0",
     "promise-sequential": "^1.1.1"
   },
