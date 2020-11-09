@@ -1,3 +1,11 @@
+## [2.1.2](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.1.1...v2.1.2) (2020-11-09)
+
+
+### Bug Fixes
+
+* **deps:** update @eclass/rancher-for-ci to v2.1.5 ([3487fec](https://github.com/lgaticaq/semantic-release-rancher/commit/3487fec27ea7bb744b35787d4814f9c5efbfd99b))
+* **verify:** fix pass arguments to rancher client ([2fcfdba](https://github.com/lgaticaq/semantic-release-rancher/commit/2fcfdba8dd0e1935efc25e843d370807676fb495))
+
 ## [2.1.1](https://github.com/lgaticaq/semantic-release-rancher/compare/v2.1.0...v2.1.1) (2020-05-11)
 
 

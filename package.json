@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-rancher",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Set of semantic-release plugins for upgrade service in rancher",
   "main": "index.js",
   "scripts": {
